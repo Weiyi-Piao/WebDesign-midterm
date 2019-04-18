@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Inheritance</title>
+
+<style>
+	
+</style>
+
+<link rel="stylesheet" href="Midterm CSS.css" type = "text/css">
+</head>
+
+
+
+
+<body>
+<h1>Inheritance</h1>
+<header>
+<div class="sides" style="height: 2300px">
+	<fieldset style="height: 2280px">
+  		<legend style="color: red">Main Content</legend>
+		<ol>
+			<li><a href="polymorphism.html"       style="color: black"><b>Polymorphism</b></a></li>
+			<li><a href="Inheritance.html"        style="color: black"><b>Inheritance</b></a></li>
+			<li><a href="Encapsulation.html"      style="color: black"><b>Encapsulation</b></a></li>
+			<li><a href="Example in Python.html"  style="color: black"><b>Example in Python</b></a></li>
+			<li><a href="Video Clip.html"         style="color: black"><b>Video Clip</b></a></li>
+		</ol>
+	</fieldset>
+</div>
+</header>
+
+
+<fieldset>
+	<legend>What is inheritance?</legend>
+	<p>When you are creating a class in whatever programming language you choose, there is a delimma:<br>
+	The two classes that you created are mostly the same (for example: 90% of the program of one class<br>
+    is just a simply copy of another class.) In this case, what would you do?<br>
+	</p>
+  <p>You may choose one of the follow technique:</p>
+	<ul>
+		<li>REPEATEDLY writing the same code for several times.</li>
+		<li>OR Use the technuque called <b><em>Inheritance</em></b></li>
+	</ul>
+	
+	<p>For the first solution, the program does worked as intended. <br>
+       But what should you do if there are 10 similar classes? 20 class? or even more?</p>
+    <p>It seems too redundant for a program. that's why we should use <b><em>Inheritance</em></b>:<br>
+       <b><em>Inheritance create lowerclass that can use all the functions from the superclass.</em></b>
+    </p>
+	
+</fieldset><br>
+
+<section>
+<fieldset>
+<legend>Let's See an Example: </legend>
+<img src="屏幕快照 2019-04-17 09.20.18.png" width="520" height="302" alt=""/><br>
+<img src="屏幕快照 2019-04-17 09.20.32.png" width="520" height="105" alt=""/>
+<p>We can see that inside those three classes, though we don't write the function "walk" in class "Cat" and "Dog"<br>
+   we still can use it because they are the lowerclass of "Animal"</p>
+
+
+<p>Let's see another case:</p>
+<img src="屏幕快照 2019-04-17 09.52.39.png" width="558" height="158" alt=""/>
+
+
+<p>Why it doesn't worked? <br>
+This is because there is no direct connections between Cat and Dog<br>
+We can interpret the relationship of these three classes as: </p>
+<img src="屏幕快照 2019-04-17 09.48.16.png" width="538" height="486" alt=""/><br>
+<p>So Unless Dog is a lowerclass of Cat, the function "eat" will never works for an object defined by class "Dog".</p>
+
+</fieldset>
+</section>
+
+<fieldset>
+	<legend>What happened if two classes contains functions with the same name?</legend>
+  <p>Well, let's Just have a try.</p>
+  <img src="屏幕快照 2019-04-17 10.09.59.png" width="520" height="219" alt=""/><br>
+  <img src="屏幕快照 2019-04-17 10.10.16.png" width="520" height="66" alt=""/><br>
+  <p>We can see that the object b perform the walk function in class Cat instead of the function in Animal.<br>
+     Other functions inside a class also follows this pattern.<br><br>
+     So we can make the conclusion that when the program calls a function in Class, <br>
+     the computer will first search for the function within the class,<br>
+     If there is NO matched fucntion, the computer will THEN search it in its uppter class.
+</p>
+</fieldset>
+
+<p>There is also an example code <a href="Example in Python.html">here</a>.</p>
+
+
+
+
+
+<br><br><br>
+<fieldset>
+	<legend>How is the web page?</legend>
+	<p>Plase Score the website(min 0, max 10) <input type="range" name="guests" min="1" max="10"><br>
+	<textarea name="comment" rows="4" cols="100" placeholder="Do you have any suggestions? Leave us a comment."></textarea></p>
+</fieldset>
+
+<footer>
+		<p><small>Copyright &copy;2019 Jason Piao.</small></p> <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://study.163.com/course/introduction.htm?courseId=1003108028&_trace_c_p_k2_=b8153a1ba6ab4aeca3ba6458dfd9b027"> More Informations </a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>
